@@ -1,17 +1,30 @@
-import { put } from "@vercel/blob";
 import { NextResponse } from "next/server";
+import fs from "fs";
+import path from "path";
+import { pipeline } from "stream";
+import { promisify } from "util";
+
+const pump = promisify(pipeline);
 
 export async function POST(request: Request) {
-    const { searchParams } = new URL(request.url);
-    const filename = searchParams.get("filename");
+    try {
+        const formData = await request.formData();
+        const file = formData.get("file") as File;
+        const filename = formData.get("filename") as string || file.name;
 
-    if (!filename || !request.body) {
-        return NextResponse.json({ error: "Filename and body required" }, { status: 400 });
+        if (!file) {
+            return NextResponse.json({ error: "No file uploaded" }, { status: 400 });
+        }
+
+        const buffer = Buffer.from(await file.arrayBuffer());
+        const relativePath = `/images/${Date.now()}-${filename}`;
+        const absolutePath = path.join(process.cwd(), "public", relativePath);
+
+        await fs.promises.writeFile(absolutePath, buffer);
+
+        return NextResponse.json({ url: relativePath });
+    } catch (error) {
+        console.error("Upload error:", error);
+        return NextResponse.json({ error: "Upload failed" }, { status: 500 });
     }
-
-    const blob = await put(filename, request.body, {
-        access: "public",
-    });
-
-    return NextResponse.json(blob);
 }

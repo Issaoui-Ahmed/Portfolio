@@ -1,5 +1,6 @@
 import data from "../data/portfolio.json";
 import Image from "next/image";
+import { resolveImagePath } from "../utils/image";
 
 const { personalInfo } = data;
 
@@ -9,7 +10,7 @@ export default function Header() {
             {personalInfo.profileImage && (
                 <div className="relative w-32 h-32 flex-shrink-0 overflow-hidden rounded-full">
                     <Image
-                        src={personalInfo.profileImage}
+                        src={resolveImagePath(personalInfo.profileImage)}
                         alt={personalInfo.name}
                         fill
                         className="object-cover"

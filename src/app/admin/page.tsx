@@ -58,12 +58,21 @@ export default function AdminPage() {
 
     const handleUpload = async (file: File): Promise<string | null> => {
         try {
-            const response = await fetch(`/api/upload?filename=${file.name}`, {
+            const formData = new FormData();
+            formData.append("file", file);
+            formData.append("filename", file.name);
+
+            const response = await fetch("/api/upload", {
                 method: "POST",
-                body: file,
+                body: formData,
             });
-            const newBlob = await response.json();
-            return newBlob.url;
+
+            if (!response.ok) throw new Error("Upload failed");
+
+            const data = await response.json();
+            // Return just the filename if it starts with /images/
+            const url = data.url;
+            return url.startsWith("/images/") ? url.replace("/images/", "") : url;
         } catch (error) {
             alert("Upload failed");
             return null;

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { resolveImagePath } from "../utils/image";
 
 export type Project = {
     id: number;
@@ -14,7 +15,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         <div className="group cursor-pointer break-inside-avoid mb-20">
             <div className="relative overflow-hidden mb-4 bg-gray-100">
                 <Image
-                    src={project.image}
+                    src={resolveImagePath(project.image)}
                     alt={project.title}
                     width={project.width}
                     height={project.height}
