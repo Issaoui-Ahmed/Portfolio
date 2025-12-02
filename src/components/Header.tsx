@@ -18,7 +18,7 @@ export default function Header() {
                 </div>
             )}
             <div>
-                <h1 className="text-xl font-semibold mb-4 text-black">{personalInfo.name}</h1>
+                <h1 className="text-xl mb-4 text-black">{personalInfo.name}</h1>
                 <p className="text-gray-500 max-w-2xl leading-relaxed text-sm">
                     {personalInfo.bio}
                 </p>

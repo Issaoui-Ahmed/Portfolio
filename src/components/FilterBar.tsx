@@ -6,7 +6,7 @@ type FilterBarProps = {
 };
 
 import data from "../data/portfolio.json";
-const { categories } = data;
+const categories = ["All", ...Array.from(new Set(data.projects.map((p) => p.category)))];
 
 export default function FilterBar({ currentFilter, setFilter }: FilterBarProps) {
     return (
@@ -16,7 +16,7 @@ export default function FilterBar({ currentFilter, setFilter }: FilterBarProps) 
                     key={filter}
                     onClick={() => setFilter(filter)}
                     className={`text-sm pb-4 relative transition-colors ${currentFilter === filter
-                        ? "text-black font-medium"
+                        ? "text-black"
                         : "text-gray-300 hover:text-gray-500"
                         }`}
                 >

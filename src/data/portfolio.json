@@ -1,6 +1,6 @@
 {
   "personalInfo": {
-    "name": "Ahmed Issaoui",
+    "name": "AHMED ISSAOUI",
     "role": "Machine Learning | Data Science | Python",
     "bio": "Machine Learning | Data Science | Python",
     "profileImage": "1763866914937.jpg"
@@ -14,100 +14,41 @@
   ],
   "projects": [
     {
-      "id": 1,
-      "title": "Modern Architecture",
-      "category": "Design",
-      "image": "https://placehold.co/800x1000/e2e8f0/475569?text=Architecture",
-      "width": 800,
-      "height": 1000
-    },
-    {
       "id": 2,
-      "title": "Abstract Composition",
-      "category": "Art",
-      "image": "https://placehold.co/800x600/f1f5f9/475569?text=Abstract",
+      "title": "Micro Cities, Macro Problems",
+      "category": "Experience",
+      "image": "1764631053167-Gemini_Generated_Image_mrvbf9mrvbf9mrvb.png",
       "width": 800,
-      "height": 600
-    },
-    {
-      "id": 3,
-      "title": "Minimal Workspace",
-      "category": "Photography",
-      "image": "https://placehold.co/800x850/f8fafc/475569?text=Workspace",
-      "width": 800,
-      "height": 850
-    },
-    {
-      "id": 4,
-      "title": "Urban Geometry",
-      "category": "Photography",
-      "image": "https://placehold.co/800x550/cbd5e1/475569?text=Urban",
-      "width": 800,
-      "height": 550
-    },
-    {
-      "id": 5,
-      "title": "Swiss Style Poster",
-      "category": "Design",
-      "image": "https://placehold.co/800x950/e2e8f0/475569?text=Swiss+Style",
-      "width": 800,
-      "height": 950
-    },
-    {
-      "id": 6,
-      "title": "Fluid Shapes",
-      "category": "Art",
-      "image": "https://placehold.co/800x700/f1f5f9/475569?text=Fluid",
-      "width": 800,
-      "height": 700
-    },
-    {
-      "id": 7,
-      "title": "Interior Shadows",
-      "category": "Photography",
-      "image": "https://placehold.co/800x900/f8fafc/475569?text=Interior",
-      "width": 800,
-      "height": 900
-    },
-    {
-      "id": 8,
-      "title": "Typography Study",
-      "category": "Design",
-      "image": "https://placehold.co/800x500/cbd5e1/475569?text=Typography",
-      "width": 800,
-      "height": 500
+      "height": 600,
+      "sections": [
+        {
+          "id": "goal",
+          "title": "Goal",
+          "content": "ergrf\nwefw\nef\nwef\nwef\nd"
+        }
+      ],
+      "link": "",
+      "githubLink": "https://medium.com/@aissaoui2022/building-a-multi-layer-trading-system-eb15e6a82879",
+      "mediumLink": "https://medium.com/@aissaoui2022/building-a-multi-layer-trading-system-eb15e6a82879",
+      "customLinkIcon": "1764690781916-Gemini_Generated_Image_mslk1dmslk1dmslk.png",
+      "customLinkText": "Created for CRAiEDL",
+      "customLinkUrl": "https://www.craiedl.ca/"
     },
     {
       "id": 9,
-      "title": "Digital Landscapes",
-      "category": "Art",
+      "title": "Moral Maps",
+      "category": "Experience",
       "image": "https://placehold.co/800x1100/e2e8f0/475569?text=Digital",
       "width": 800,
       "height": 1100
     },
     {
-      "id": 10,
-      "title": "Monochrome Building",
-      "category": "Photography",
-      "image": "https://placehold.co/800x650/f1f5f9/475569?text=Monochrome",
-      "width": 800,
-      "height": 650
-    },
-    {
       "id": 11,
-      "title": "Brand Identity",
-      "category": "Design",
+      "title": "BrainHealth Companion",
+      "category": "Experience",
       "image": "https://placehold.co/800x800/f8fafc/475569?text=Identity",
       "width": 800,
       "height": 800
-    },
-    {
-      "id": 12,
-      "title": "Ceramic Texture",
-      "category": "Art",
-      "image": "https://placehold.co/800x600/cbd5e1/475569?text=Ceramic",
-      "width": 800,
-      "height": 600
     }
   ]
 }
