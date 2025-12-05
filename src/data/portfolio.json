@@ -5,6 +5,10 @@
     "bio": "Machine Learning | Data Science | Python",
     "profileImage": "1763866914937.jpg"
   },
+  "siteSettings": {
+    "appName": "Ahmed Issaoui",
+    "favicon": "1764951664695-1763866915036.jpg"
+  },
   "categories": [
     "All",
     "Design",
@@ -14,12 +18,26 @@
   ],
   "projects": [
     {
+      "id": 9,
+      "title": "MoralMaps — Map-based Data Collection Platform",
+      "category": "Experience",
+      "image": "1764867852928-Gemini_Generated_Image_bwt3z0bwt3z0bwt3.png",
+      "width": 800,
+      "height": 756,
+      "customLinkText": "Created for CRAiEDL",
+      "customLinkUrl": "https://www.craiedl.ca/",
+      "customLinkIcon": "1764865226171-Gemini_Generated_Image_mslk1dmslk1dmslk.png",
+      "deployedLink": "https://moral-map.vercel.app/",
+      "mediumLink": "https://medium.com/@aissaoui2022/building-a-tool-to-ask-what-if-fastest-isn-t-best-2e813bb1ce4e?postPublishedType=repub",
+      "githubLink": "https://github.com/Issaoui-Ahmed/MoralMaps"
+    },
+    {
       "id": 2,
-      "title": "Micro Cities, Macro Problems",
+      "title": "Reimagining Navigation — Interactive Robotic Experience",
       "category": "Experience",
       "image": "1764631053167-Gemini_Generated_Image_mrvbf9mrvbf9mrvb.png",
       "width": 800,
-      "height": 600,
+      "height": 915,
       "sections": [
         {
           "id": "goal",
@@ -28,27 +46,24 @@
         }
       ],
       "link": "",
-      "githubLink": "https://medium.com/@aissaoui2022/building-a-multi-layer-trading-system-eb15e6a82879",
-      "mediumLink": "https://medium.com/@aissaoui2022/building-a-multi-layer-trading-system-eb15e6a82879",
+      "githubLink": "https://github.com/Issaoui-Ahmed/Reimagining-Navigation",
+      "mediumLink": "https://medium.com/@aissaoui2022/building-a-robot-that-makes-you-question-your-navigation-app-7e7b2b7d1c58",
       "customLinkIcon": "1764690781916-Gemini_Generated_Image_mslk1dmslk1dmslk.png",
       "customLinkText": "Created for CRAiEDL",
       "customLinkUrl": "https://www.craiedl.ca/"
     },
     {
-      "id": 9,
-      "title": "Moral Maps",
-      "category": "Experience",
-      "image": "https://placehold.co/800x1100/e2e8f0/475569?text=Digital",
-      "width": 800,
-      "height": 1100
-    },
-    {
       "id": 11,
-      "title": "BrainHealth Companion",
+      "title": "BrainHealth Companion - Chatbot",
       "category": "Experience",
-      "image": "https://placehold.co/800x800/f8fafc/475569?text=Identity",
+      "image": "1764951281880-Gemini_Generated_Image_stjaevstjaevstja.png",
       "width": 800,
-      "height": 800
+      "height": 792,
+      "customLinkText": "Created for OHRI",
+      "customLinkUrl": "https://www.ohri.ca/",
+      "customLinkIcon": "1764867601694-ottawa_hospital_research_institute_logo.jpg",
+      "githubLink": "https://huggingface.co/spaces/aissaa0399/concossio/tree/main",
+      "deployedLink": "https://huggingface.co/spaces/aissaa0399/concossio"
     }
   ]
 }

@@ -13,6 +13,7 @@ type Project = {
     height: number;
     githubLink?: string;
     mediumLink?: string;
+    deployedLink?: string;
     customLinkText?: string;
     customLinkUrl?: string;
     customLinkIcon?: string;
@@ -179,15 +180,22 @@ export function SortableProjectCard({
                         type="text"
                         value={project.githubLink || ""}
                         onChange={(e) => onUpdate({ ...project, githubLink: e.target.value })}
-                        className="w-1/2 bg-transparent text-xs text-gray-500 border-b border-transparent hover:border-gray-300 focus:border-black outline-none"
+                        className="w-1/3 bg-transparent text-xs text-gray-500 border-b border-transparent hover:border-gray-300 focus:border-black outline-none"
                         placeholder="GitHub URL"
                     />
                     <input
                         type="text"
                         value={project.mediumLink || ""}
                         onChange={(e) => onUpdate({ ...project, mediumLink: e.target.value })}
-                        className="w-1/2 bg-transparent text-xs text-gray-500 border-b border-transparent hover:border-gray-300 focus:border-black outline-none"
+                        className="w-1/3 bg-transparent text-xs text-gray-500 border-b border-transparent hover:border-gray-300 focus:border-black outline-none"
                         placeholder="Medium URL"
+                    />
+                    <input
+                        type="text"
+                        value={project.deployedLink || ""}
+                        onChange={(e) => onUpdate({ ...project, deployedLink: e.target.value })}
+                        className="w-1/3 bg-transparent text-xs text-gray-500 border-b border-transparent hover:border-gray-300 focus:border-black outline-none"
+                        placeholder="Deployed URL"
                     />
                 </div>
             </div>

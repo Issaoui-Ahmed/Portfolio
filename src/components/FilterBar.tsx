@@ -6,7 +6,7 @@ type FilterBarProps = {
 };
 
 import data from "../data/portfolio.json";
-const categories = ["All", ...Array.from(new Set(data.projects.map((p) => p.category)))];
+const categories = Array.from(new Set(data.projects.map((p) => p.category)));
 
 export default function FilterBar({ currentFilter, setFilter }: FilterBarProps) {
     return (

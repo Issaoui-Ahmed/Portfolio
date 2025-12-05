@@ -27,6 +27,7 @@ type Project = {
     height: number;
     githubLink?: string;
     mediumLink?: string;
+    deployedLink?: string;
     customLinkText?: string;
     customLinkUrl?: string;
     customLinkIcon?: string;
@@ -38,6 +39,10 @@ type PortfolioData = {
         role: string;
         bio: string;
         profileImage?: string;
+    };
+    siteSettings: {
+        appName: string;
+        favicon?: string;
     };
     categories: string[];
     projects: Project[];
@@ -263,6 +268,71 @@ export default function AdminPage() {
                                             })
                                         }
                                         className="w-full p-2 border rounded text-sm text-gray-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="mb-12 border-b pb-12">
+                    <h2 className="text-xl mb-4">Site Settings</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label className="block text-sm mb-1">App Name (Browser Tab)</label>
+                            <input
+                                type="text"
+                                value={data.siteSettings?.appName || ""}
+                                onChange={(e) =>
+                                    setData({
+                                        ...data,
+                                        siteSettings: {
+                                            ...data.siteSettings,
+                                            appName: e.target.value,
+                                        },
+                                    })
+                                }
+                                className="w-full p-2 border rounded"
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-sm mb-1">Favicon</label>
+                            <div className="flex gap-4 items-center">
+                                <div className="w-12 h-12 bg-gray-100 rounded flex items-center justify-center overflow-hidden border">
+                                    {data.siteSettings?.favicon ? (
+                                        <img
+                                            src={
+                                                data.siteSettings.favicon.startsWith("http")
+                                                    ? data.siteSettings.favicon
+                                                    : `/images/${data.siteSettings.favicon}`
+                                            }
+                                            alt="Favicon"
+                                            className="w-8 h-8 object-contain"
+                                        />
+                                    ) : (
+                                        <span className="text-xs text-gray-400">None</span>
+                                    )}
+                                </div>
+                                <div>
+                                    <input
+                                        type="file"
+                                        accept="image/x-icon,image/png,image/jpeg"
+                                        onChange={async (e) => {
+                                            const file = e.target.files?.[0];
+                                            if (file && data) {
+                                                const url = await handleUpload(file);
+                                                if (url) {
+                                                    setData({
+                                                        ...data,
+                                                        siteSettings: {
+                                                            ...data.siteSettings,
+                                                            favicon: url,
+                                                        },
+                                                    });
+                                                }
+                                            }
+                                        }}
+                                        className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:bg-black file:text-white hover:file:bg-gray-800"
                                     />
                                 </div>
                             </div>
