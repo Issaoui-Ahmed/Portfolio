@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "title": "Ahmed Issaoui",
+    "subtitle": "Machine Learning | Full Stack Dev | Python",
+    "description": "I build machine learning models across a range of domains, applying them to real-world problems. I work primarily in Python, developing software for areas such as robotics and intelligent systems. I also create full-stack web applications using React, focusing on clean, user-friendly interfaces that showcase products and software effectively.",
+    "email": "issaoui.aa@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/ahmed-issaoui-/",
+    "image": "/uploads/1767977186478-1763866915036.jpg"
+  },
+  "experiences": [
+    {
+      "title": "MoralMaps",
+      "description": "Map-based Data Collection Platform",
+      "repoLink": "https://github.com/Issaoui-Ahmed/MoralMaps",
+      "blogLink": "https://medium.com/@aissaoui2022/building-a-tool-to-ask-what-if-fastest-isn-t-best-2e813bb1ce4e?postPublishedType=repub",
+      "liveLink": "https://craiedl-map.vercel.app/",
+      "image": "/uploads/1768062826837-1_c3EGQvX7OzV3J9vQY1oK3Q.webp"
+    },
+    {
+      "title": "BrainHealth Companion",
+      "description": "Real-time chat application powered by OpenAI",
+      "repoLink": "https://github.com/Issaoui-Ahmed/Concussio",
+      "blogLink": "",
+      "liveLink": "https://concussio.vercel.app/",
+      "image": "/uploads/1768062893449-Screenshot_2026-01-10_113425.png"
+    },
+    {
+      "title": "Reimagining Navigation",
+      "description": "Interactive Robotic Experience",
+      "repoLink": "https://github.com/Issaoui-Ahmed/Reimagining-Navigation",
+      "blogLink": "https://medium.com/@aissaoui2022/building-a-robot-that-makes-you-question-your-navigation-app-7e7b2b7d1c58",
+      "liveLink": "",
+      "image": "/uploads/1768062955697-1_Rk-g5oMnNhRRSqI3t0iDlQ.webp"
+    }
+  ],
+  "skills": [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "TailwindCSS",
+    "GraphQL",
+    "Python",
+    "AWS"
+  ]
+}
