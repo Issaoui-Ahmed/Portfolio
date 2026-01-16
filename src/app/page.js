@@ -107,6 +107,23 @@ export default async function Home() {
                                 <div className={styles.cardContent}>
                                     <h3 className={styles.cardTitle}>{project.title}</h3>
                                     <p className={styles.cardDescription}>{project.description}</p>
+
+                                    {project.extraText && (
+                                        <div className={styles.extraSection}>
+                                            <span>{project.extraText}</span>
+                                            {project.extraImage && (
+                                                <div style={{ position: 'relative', width: '1em', height: '1em' }}>
+                                                    <Image
+                                                        src={project.extraImage}
+                                                        alt=""
+                                                        fill
+                                                        style={{ objectFit: 'contain' }}
+                                                    />
+                                                </div>
+                                            )}
+                                        </div>
+                                    )}
+
                                     <div className={styles.cardLinks}>
                                         {project.repoLink && (
                                             <a href={project.repoLink} className={styles.cardLink} target="_blank" rel="noopener noreferrer">

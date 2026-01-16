@@ -44,7 +44,7 @@ export default function AdminPage() {
     const addExperience = () => {
         setData(prev => ({
             ...prev,
-            experiences: [...prev.experiences, { title: '', description: '', repoLink: '#', blogLink: '#', liveLink: '#' }]
+            experiences: [...prev.experiences, { title: '', description: '', repoLink: '#', blogLink: '#', liveLink: '#', extraText: '', extraImage: '' }]
         }));
     };
 
@@ -106,6 +106,8 @@ export default function AdminPage() {
                     handleChange('hero', 'image', json.url);
                 } else if (section === 'experiences' && index !== null) {
                     handleExperienceChange(index, 'image', json.url);
+                } else if (section === 'experiences-extra' && index !== null) {
+                    handleExperienceChange(index, 'extraImage', json.url);
                 }
             } else {
                 alert('Upload failed');
@@ -179,6 +181,15 @@ export default function AdminPage() {
                         <div className={styles.field}>
                             <label className={styles.label}>Live Link</label>
                             <input className={styles.input} value={exp.liveLink} onChange={e => handleExperienceChange(i, 'liveLink', e.target.value)} />
+                        </div>
+                        <div className={styles.field}>
+                            <label className={styles.label}>Extra Section - Text (Italic)</label>
+                            <input className={styles.input} value={exp.extraText || ''} onChange={e => handleExperienceChange(i, 'extraText', e.target.value)} />
+                        </div>
+                        <div className={styles.field}>
+                            <label className={styles.label}>Extra Section - Image/Icon</label>
+                            {exp.extraImage && <img src={exp.extraImage} alt="Extra Preview" style={{ width: '24px', height: '24px', objectFit: 'contain', marginBottom: '10px' }} />}
+                            <input type="file" accept="image/*" onChange={(e) => handleUpload(e, 'experiences-extra', i)} />
                         </div>
                         <button className={styles.removeButton} onClick={() => removeExperience(i)}>Remove Experience</button>
                     </div>

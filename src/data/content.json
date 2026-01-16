@@ -14,7 +14,9 @@
       "repoLink": "https://github.com/Issaoui-Ahmed/MoralMaps",
       "blogLink": "https://medium.com/@aissaoui2022/building-a-tool-to-ask-what-if-fastest-isn-t-best-2e813bb1ce4e?postPublishedType=repub",
       "liveLink": "https://craiedl-map.vercel.app/",
-      "image": "/uploads/1768062826837-1_c3EGQvX7OzV3J9vQY1oK3Q.webp"
+      "image": "/uploads/1768062826837-1_c3EGQvX7OzV3J9vQY1oK3Q.webp",
+      "extraText": "Created for CRAiEDL",
+      "extraImage": "/uploads/1768579335958-1764865226171-Gemini_Generated_Image_mslk1dmslk1dmslk.png"
     },
     {
       "title": "BrainHealth Companion",
@@ -22,7 +24,9 @@
       "repoLink": "https://github.com/Issaoui-Ahmed/Concussio",
       "blogLink": "",
       "liveLink": "https://concussio.vercel.app/",
-      "image": "/uploads/1768062893449-Screenshot_2026-01-10_113425.png"
+      "image": "/uploads/1768062893449-Screenshot_2026-01-10_113425.png",
+      "extraText": "Created for OHRI",
+      "extraImage": "/uploads/1768579469398-1764867601694-ottawa_hospital_research_institute_logo.jpg"
     },
     {
       "title": "Reimagining Navigation",
@@ -30,17 +34,19 @@
       "repoLink": "https://github.com/Issaoui-Ahmed/Reimagining-Navigation",
       "blogLink": "https://medium.com/@aissaoui2022/building-a-robot-that-makes-you-question-your-navigation-app-7e7b2b7d1c58",
       "liveLink": "",
-      "image": "/uploads/1768062955697-1_Rk-g5oMnNhRRSqI3t0iDlQ.webp"
+      "image": "/uploads/1768062955697-1_Rk-g5oMnNhRRSqI3t0iDlQ.webp",
+      "extraImage": "/uploads/1768579433045-1764865226171-Gemini_Generated_Image_mslk1dmslk1dmslk.png",
+      "extraText": "Created for CRAiEDL"
     }
   ],
   "skills": [
     "React",
     "Next.js",
     "TypeScript",
-    "Node.js",
-    "TailwindCSS",
-    "GraphQL",
     "Python",
-    "AWS"
+    "SQL & NoSQL",
+    "NLP",
+    "Computer Vision",
+    "RAG Chatbot"
   ]
 }

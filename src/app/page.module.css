@@ -237,20 +237,30 @@
 .cardTitle {
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .cardDescription {
     color: #a1a1aa;
     font-size: 0.95rem;
     line-height: 1.6;
-    margin-bottom: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.extraSection {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: #a1a1aa;
+    /* Match description color */
 }
 
 .cardLinks {
     display: flex;
     gap: 1.5rem;
-    margin-top: auto;
+    margin-top: 0;
 }
 
 .cardLink {
