@@ -11,10 +11,17 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "John Doe - Portfolio",
-  description: "Full Stack Developer & UI/UX Enthusiast",
-};
+import content from "@/data/content.json";
+
+export async function generateMetadata() {
+  return {
+    title: `${content.hero.title} - Portfolio`,
+    description: "Full Stack Developer & UI/UX Enthusiast",
+    icons: {
+      icon: content.hero.image,
+    },
+  };
+}
 
 export default function RootLayout({ children }) {
   return (
