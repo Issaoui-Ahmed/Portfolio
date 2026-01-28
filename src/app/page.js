@@ -124,6 +124,12 @@ export default async function Home() {
                                         </div>
                                     )}
 
+                                    {project.dateLocation && (
+                                        <div className={styles.dateLocation}>
+                                            {project.dateLocation}
+                                        </div>
+                                    )}
+
                                     <div className={styles.cardLinks}>
                                         {project.repoLink && (
                                             <a href={project.repoLink} className={styles.cardLink} target="_blank" rel="noopener noreferrer">

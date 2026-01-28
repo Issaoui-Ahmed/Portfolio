@@ -9,16 +9,6 @@
   },
   "experiences": [
     {
-      "title": "MoralMaps",
-      "description": "Map-based Data Collection Platform",
-      "repoLink": "https://github.com/Issaoui-Ahmed/MoralMaps",
-      "blogLink": "https://medium.com/@aissaoui2022/building-a-tool-to-ask-what-if-fastest-isn-t-best-2e813bb1ce4e?postPublishedType=repub",
-      "liveLink": "https://craiedl-map.vercel.app/",
-      "image": "/uploads/1768062826837-1_c3EGQvX7OzV3J9vQY1oK3Q.webp",
-      "extraText": "Created for CRAiEDL",
-      "extraImage": "/uploads/1768579335958-1764865226171-Gemini_Generated_Image_mslk1dmslk1dmslk.png"
-    },
-    {
       "title": "BrainHealth Companion",
       "description": "Real-time chat application powered by OpenAI",
       "repoLink": "https://github.com/Issaoui-Ahmed/Concussio",
@@ -26,7 +16,19 @@
       "liveLink": "https://concussio.vercel.app/",
       "image": "/uploads/1768062893449-Screenshot_2026-01-10_113425.png",
       "extraText": "Created for OHRI",
-      "extraImage": "/uploads/1768579469398-1764867601694-ottawa_hospital_research_institute_logo.jpg"
+      "extraImage": "/uploads/1768579469398-1764867601694-ottawa_hospital_research_institute_logo.jpg",
+      "dateLocation": "2026, Ottawa"
+    },
+    {
+      "title": "MoralMaps",
+      "description": "Map-based Data Collection Platform",
+      "repoLink": "https://github.com/Issaoui-Ahmed/MoralMaps",
+      "blogLink": "https://medium.com/@aissaoui2022/building-a-tool-to-ask-what-if-fastest-isn-t-best-2e813bb1ce4e?postPublishedType=repub",
+      "liveLink": "https://craiedl-map.vercel.app/",
+      "image": "/uploads/1768062826837-1_c3EGQvX7OzV3J9vQY1oK3Q.webp",
+      "extraText": "Created for CRAiEDL",
+      "extraImage": "/uploads/1768579335958-1764865226171-Gemini_Generated_Image_mslk1dmslk1dmslk.png",
+      "dateLocation": "2025, Ottawa"
     },
     {
       "title": "Reimagining Navigation",
@@ -36,7 +38,30 @@
       "liveLink": "",
       "image": "/uploads/1768062955697-1_Rk-g5oMnNhRRSqI3t0iDlQ.webp",
       "extraImage": "/uploads/1768579433045-1764865226171-Gemini_Generated_Image_mslk1dmslk1dmslk.png",
-      "extraText": "Created for CRAiEDL"
+      "extraText": "Created for CRAiEDL",
+      "dateLocation": "2025, Ottawa"
+    },
+    {
+      "title": "CamGym",
+      "description": "Immersive Fitness Experience",
+      "repoLink": "https://github.com/Issaoui-Ahmed/CamGym",
+      "blogLink": "",
+      "liveLink": "",
+      "extraText": "Created for STA",
+      "extraImage": "/uploads/1769542414807-STA-Logo-1024x611.png",
+      "image": "/uploads/1769542459050-47cb239c395244705cebb1d2838a2b192661f122.jpg",
+      "dateLocation": "2023, Doha"
+    },
+    {
+      "title": "Arabic Text Augmentation",
+      "description": "Exploring Augmentation Techniques",
+      "repoLink": "https://github.com/Issaoui-Ahmed/Arabic-Text-Augmentation",
+      "blogLink": "",
+      "liveLink": "",
+      "extraText": "Created For QCRI",
+      "extraImage": "/uploads/1769542890359-Screenshot_2026-01-27_144009.png",
+      "image": "/uploads/1769543079195-1_eproIleJllsp0enh6HA2Hw.jpeg",
+      "dateLocation": "2022, Doha"
     }
   ],
   "skills": [

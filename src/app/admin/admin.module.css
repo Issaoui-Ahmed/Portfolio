@@ -88,6 +88,23 @@
     margin-top: 0.5rem;
 }
 
+.moveButton {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.moveButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 .success {
     color: green;
     margin-top: 1rem;

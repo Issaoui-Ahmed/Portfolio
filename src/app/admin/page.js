@@ -44,8 +44,22 @@ export default function AdminPage() {
     const addExperience = () => {
         setData(prev => ({
             ...prev,
-            experiences: [...prev.experiences, { title: '', description: '', repoLink: '#', blogLink: '#', liveLink: '#', extraText: '', extraImage: '' }]
+            experiences: [...prev.experiences, { title: '', description: '', repoLink: '#', blogLink: '#', liveLink: '#', extraText: '', extraImage: '', dateLocation: '' }]
         }));
+    };
+
+    const moveExperienceUp = (index) => {
+        if (index === 0) return;
+        const newExperiences = [...data.experiences];
+        [newExperiences[index - 1], newExperiences[index]] = [newExperiences[index], newExperiences[index - 1]];
+        setData(prev => ({ ...prev, experiences: newExperiences }));
+    };
+
+    const moveExperienceDown = (index) => {
+        if (index === data.experiences.length - 1) return;
+        const newExperiences = [...data.experiences];
+        [newExperiences[index], newExperiences[index + 1]] = [newExperiences[index + 1], newExperiences[index]];
+        setData(prev => ({ ...prev, experiences: newExperiences }));
     };
 
     const removeExperience = (index) => {
@@ -187,11 +201,31 @@ export default function AdminPage() {
                             <input className={styles.input} value={exp.extraText || ''} onChange={e => handleExperienceChange(i, 'extraText', e.target.value)} />
                         </div>
                         <div className={styles.field}>
+                            <label className={styles.label}>Date, Location</label>
+                            <input className={styles.input} value={exp.dateLocation || ''} onChange={e => handleExperienceChange(i, 'dateLocation', e.target.value)} />
+                        </div>
+                        <div className={styles.field}>
                             <label className={styles.label}>Extra Section - Image/Icon</label>
                             {exp.extraImage && <img src={exp.extraImage} alt="Extra Preview" style={{ width: '24px', height: '24px', objectFit: 'contain', marginBottom: '10px' }} />}
                             <input type="file" accept="image/*" onChange={(e) => handleUpload(e, 'experiences-extra', i)} />
                         </div>
-                        <button className={styles.removeButton} onClick={() => removeExperience(i)}>Remove Experience</button>
+                        <div style={{ display: 'flex', gap: '0.5rem', marginTop: '1rem' }}>
+                            <button
+                                className={styles.moveButton}
+                                onClick={() => moveExperienceUp(i)}
+                                disabled={i === 0}
+                            >
+                                ↑ Move Up
+                            </button>
+                            <button
+                                className={styles.moveButton}
+                                onClick={() => moveExperienceDown(i)}
+                                disabled={i === data.experiences.length - 1}
+                            >
+                                ↓ Move Down
+                            </button>
+                            <button className={styles.removeButton} style={{ marginTop: '0.5rem' }} onClick={() => removeExperience(i)}>Remove Experience</button>
+                        </div>
                     </div>
                 ))}
                 <button className={styles.button} onClick={addExperience} style={{ background: '#28a745' }}>+ Add Experience</button>
@@ -212,6 +246,6 @@ export default function AdminPage() {
 
             <button className={styles.button} onClick={handleSave}>Save Changes</button>
             {status && <p className={status.includes('Error') || status.includes('Failed') ? styles.error : styles.success}>{status}</p>}
-        </div>
+        </div >
     );
 }
